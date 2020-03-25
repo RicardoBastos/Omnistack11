@@ -1,0 +1,9 @@
+npm i -y
+npm i nodemon -D   
+npm i knex 
+npx knex init  
+npm i sqlite3  
+npx knex migrate:make create_incidents
+npx knex migrate:latest
+npx knex migrate:rollback
+npx knex migrate:status
